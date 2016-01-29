@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.shoppingapp.app.server.service.BrandTestCase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.shoppingapp.app.server.service.BrandTestCase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.shoppingapp.app.server.service.html">com.shoppingapp.app.server.service</a> &gt; BrandTestCase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.304s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test1Save</td>
+<td>0.109s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test2Update</td>
+<td>0.034s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3FindById</td>
+<td>0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3findBycategoryId</td>
+<td>0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3findByproductId</td>
+<td>0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test4Delete</td>
+<td>0.143s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>[EL Fine]: sql: 2016-01-29 15:00:55.738--ClientSession(2115472397)--Connection(29813308)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Product_M (productId, productName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [D983E8DB-8B8F-4274-AC79-B3348D9EA315, 245V5xd3fasVWaxJTBnTQ0fzDkbzpzgEmiTEHVe20O2WxptOVx, 1, AAAAA, 2016-01-29 15:00:55.735, null, 2016-01-29 15:00:55.735, 1, 51000]
+[EL Fine]: sql: 2016-01-29 15:00:55.769--ClientSession(74762886)--Connection(29813308)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Category_M (categoryId, categoryName, productId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [6D9F4773-70E0-4125-AB99-256F792F9397, n6J3HV0ttBFY68AdTjqkJjcn8STfggogjsdd8XVn0GF6amx2tM, D983E8DB-8B8F-4274-AC79-B3348D9EA315, 1, AAAAA, 2016-01-29 15:00:55.735, null, 2016-01-29 15:00:55.735, 1, 51000]
+Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-29 15:00:55.806--ClientSession(24588841)--Connection(29813308)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Brand_M (brandId, brandName, categoryId, productId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [CA88D131-C224-4DEA-8FD3-3A522EAD5B45, BnaGm7I4PxgOMVVgszM6d2MaAxxwAduFZ9Vm1yc3RXxqsUu53S, 6D9F4773-70E0-4125-AB99-256F792F9397, D983E8DB-8B8F-4274-AC79-B3348D9EA315, 1, AAAAA, 2016-01-29 15:00:55.8, null, 2016-01-29 15:00:55.8, 1, 51000]
+[EL Fine]: sql: 2016-01-29 15:00:55.839--ClientSession(1016454778)--Connection(29813308)--Thread(Thread[Test worker,5,main])--SELECT brandId, brandName, categoryId, productId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Brand_M WHERE ((activeStatus = ?) AND (brandId = ?))
+	bind =&gt; [1, CA88D131-C224-4DEA-8FD3-3A522EAD5B45]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-29 15:00:55.842--ClientSession(80517527)--Connection(29813308)--Thread(Thread[Test worker,5,main])--SELECT brandId, brandName, categoryId, productId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Brand_M WHERE (brandId = ?)
+	bind =&gt; [CA88D131-C224-4DEA-8FD3-3A522EAD5B45]
+[EL Fine]: sql: 2016-01-29 15:00:55.843--ClientSession(80517527)--Connection(29813308)--Thread(Thread[Test worker,5,main])--UPDATE ast_Brand_M SET brandName = ?, updatedBy = ?, versionId = ? WHERE ((brandId = ?) AND (versionId = ?))
+	bind =&gt; [LYN67QfaRc0jwKsUCKAUbmMrOmTTX02FjUqVH6HpWdKHnYPVKl, AAAAA, 2, CA88D131-C224-4DEA-8FD3-3A522EAD5B45, 1]
+[EL Fine]: sql: 2016-01-29 15:00:55.873--ClientSession(1403321993)--Connection(29813308)--Thread(Thread[Test worker,5,main])--SELECT brandId, brandName, categoryId, productId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Brand_M WHERE ((activeStatus = ?) AND (brandId = ?))
+	bind =&gt; [1, CA88D131-C224-4DEA-8FD3-3A522EAD5B45]
+[EL Fine]: sql: 2016-01-29 15:00:55.879--ClientSession(303614489)--Connection(29813308)--Thread(Thread[Test worker,5,main])--SELECT brandId, brandName, categoryId, productId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Brand_M WHERE ((activeStatus = ?) AND (categoryId = ?))
+	bind =&gt; [1, 6D9F4773-70E0-4125-AB99-256F792F9397]
+[EL Fine]: sql: 2016-01-29 15:00:55.884--ClientSession(1172997720)--Connection(29813308)--Thread(Thread[Test worker,5,main])--SELECT brandId, brandName, categoryId, productId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Brand_M WHERE ((activeStatus = ?) AND (productId = ?))
+	bind =&gt; [1, D983E8DB-8B8F-4274-AC79-B3348D9EA315]
+[EL Fine]: sql: 2016-01-29 15:00:55.891--ClientSession(141100167)--Connection(29813308)--Thread(Thread[Test worker,5,main])--SELECT brandId, brandName, categoryId, productId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Brand_M WHERE (brandId = ?)
+	bind =&gt; [CA88D131-C224-4DEA-8FD3-3A522EAD5B45]
+[EL Fine]: sql: 2016-01-29 15:00:55.892--ClientSession(141100167)--Connection(29813308)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Brand_M WHERE ((brandId = ?) AND (versionId = ?))
+	bind =&gt; [CA88D131-C224-4DEA-8FD3-3A522EAD5B45, 2]
+[EL Fine]: sql: 2016-01-29 15:00:55.923--ClientSession(231214361)--Connection(29813308)--Thread(Thread[Test worker,5,main])--SELECT categoryId, categoryName, productId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Category_M WHERE (categoryId = ?)
+	bind =&gt; [6D9F4773-70E0-4125-AB99-256F792F9397]
+[EL Fine]: sql: 2016-01-29 15:00:55.924--ClientSession(231214361)--Connection(29813308)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Category_M WHERE ((categoryId = ?) AND (versionId = ?))
+	bind =&gt; [6D9F4773-70E0-4125-AB99-256F792F9397, 1]
+[EL Fine]: sql: 2016-01-29 15:00:55.99--ClientSession(1104911325)--Connection(29813308)--Thread(Thread[Test worker,5,main])--SELECT productId, productName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Product_M WHERE (productId = ?)
+	bind =&gt; [D983E8DB-8B8F-4274-AC79-B3348D9EA315]
+[EL Fine]: sql: 2016-01-29 15:00:55.991--ClientSession(1104911325)--Connection(29813308)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Product_M WHERE ((productId = ?) AND (versionId = ?))
+	bind =&gt; [D983E8DB-8B8F-4274-AC79-B3348D9EA315, 1]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.3</a> at Jan 29, 2016 3:01:05 PM</p>
+</div>
+</div>
+</body>
+</html>

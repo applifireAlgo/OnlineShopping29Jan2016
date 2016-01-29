@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.shoppingapp.app.server.service.CategoryTestCase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.shoppingapp.app.server.service.CategoryTestCase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.shoppingapp.app.server.service.html">com.shoppingapp.app.server.service</a> &gt; CategoryTestCase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.276s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test1Save</td>
+<td>0.126s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test2Update</td>
+<td>0.075s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3FindById</td>
+<td>0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3findByproductId</td>
+<td>0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test4Delete</td>
+<td>0.063s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>[EL Fine]: sql: 2016-01-29 15:00:56.223--ClientSession(1718817032)--Connection(29813308)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Product_M (productId, productName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [E89AE221-66F7-4E00-98AB-DF0330D4472F, bp99YNqVafAC0Kn9E7Palk2xX0gL060BqWMMxL2M9WP71agdPv, 1, AAAAA, 2016-01-29 15:00:56.22, null, 2016-01-29 15:00:56.22, 1, 51000]
+Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-29 15:00:56.307--ClientSession(21580851)--Connection(29813308)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Category_M (categoryId, categoryName, productId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [A8D085AF-7EB5-413F-AE11-A069C34DEFDF, LPdtzqAYXLSiZfg8p1L4rWK3An0eRhtkTcMYUqTvZkHS0GNDhw, E89AE221-66F7-4E00-98AB-DF0330D4472F, 1, AAAAA, 2016-01-29 15:00:56.301, null, 2016-01-29 15:00:56.301, 1, 51000]
+[EL Fine]: sql: 2016-01-29 15:00:56.341--ClientSession(64444748)--Connection(29813308)--Thread(Thread[Test worker,5,main])--SELECT categoryId, categoryName, productId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Category_M WHERE ((activeStatus = ?) AND (categoryId = ?))
+	bind =&gt; [1, A8D085AF-7EB5-413F-AE11-A069C34DEFDF]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-29 15:00:56.344--ClientSession(1591952102)--Connection(29813308)--Thread(Thread[Test worker,5,main])--SELECT categoryId, categoryName, productId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Category_M WHERE (categoryId = ?)
+	bind =&gt; [A8D085AF-7EB5-413F-AE11-A069C34DEFDF]
+[EL Fine]: sql: 2016-01-29 15:00:56.345--ClientSession(1591952102)--Connection(29813308)--Thread(Thread[Test worker,5,main])--UPDATE ast_Category_M SET categoryName = ?, updatedBy = ?, versionId = ? WHERE ((categoryId = ?) AND (versionId = ?))
+	bind =&gt; [MteDraQ6sNf0GkC6VlEP1vGMqFyFUy4oDRuuayvPj6ar2Lv8P2, AAAAA, 2, A8D085AF-7EB5-413F-AE11-A069C34DEFDF, 1]
+[EL Fine]: sql: 2016-01-29 15:00:56.415--ClientSession(341348583)--Connection(29813308)--Thread(Thread[Test worker,5,main])--SELECT categoryId, categoryName, productId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Category_M WHERE ((activeStatus = ?) AND (categoryId = ?))
+	bind =&gt; [1, A8D085AF-7EB5-413F-AE11-A069C34DEFDF]
+[EL Fine]: sql: 2016-01-29 15:00:56.422--ClientSession(1226129962)--Connection(29813308)--Thread(Thread[Test worker,5,main])--SELECT categoryId, categoryName, productId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Category_M WHERE ((activeStatus = ?) AND (productId = ?))
+	bind =&gt; [1, E89AE221-66F7-4E00-98AB-DF0330D4472F]
+[EL Fine]: sql: 2016-01-29 15:00:56.428--ClientSession(1218259104)--Connection(29813308)--Thread(Thread[Test worker,5,main])--SELECT categoryId, categoryName, productId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Category_M WHERE (categoryId = ?)
+	bind =&gt; [A8D085AF-7EB5-413F-AE11-A069C34DEFDF]
+[EL Fine]: sql: 2016-01-29 15:00:56.429--ClientSession(1218259104)--Connection(29813308)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Category_M WHERE ((categoryId = ?) AND (versionId = ?))
+	bind =&gt; [A8D085AF-7EB5-413F-AE11-A069C34DEFDF, 2]
+[EL Fine]: sql: 2016-01-29 15:00:56.457--ClientSession(21260762)--Connection(29813308)--Thread(Thread[Test worker,5,main])--SELECT productId, productName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Product_M WHERE (productId = ?)
+	bind =&gt; [E89AE221-66F7-4E00-98AB-DF0330D4472F]
+[EL Fine]: sql: 2016-01-29 15:00:56.459--ClientSession(21260762)--Connection(29813308)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Product_M WHERE ((productId = ?) AND (versionId = ?))
+	bind =&gt; [E89AE221-66F7-4E00-98AB-DF0330D4472F, 1]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.3</a> at Jan 29, 2016 3:01:05 PM</p>
+</div>
+</div>
+</body>
+</html>

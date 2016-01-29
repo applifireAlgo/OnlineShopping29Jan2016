@@ -1,0 +1,38 @@
+Ext.define('Shoppingapp.shoppingapp.shared.com.shoppingapp.model.shoppingcontext.onlineshopping.OrderMainModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "orderId",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "orderDate",
+          "type": "date",
+          "defaultValue": ""
+     }, {
+          "name": "grandTotal",
+          "type": "number",
+          "defaultValue": ""
+     }, {
+          "name": "userid",
+          "reference": "User",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "OrderDetails",
+          "reference": "OrderDetailsModel"
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

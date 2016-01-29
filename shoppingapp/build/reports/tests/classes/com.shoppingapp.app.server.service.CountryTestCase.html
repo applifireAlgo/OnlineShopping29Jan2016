@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.shoppingapp.app.server.service.CountryTestCase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.shoppingapp.app.server.service.CountryTestCase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.shoppingapp.app.server.service.html">com.shoppingapp.app.server.service</a> &gt; CountryTestCase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.125s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test1Save</td>
+<td>0.049s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test2Update</td>
+<td>0.034s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3FindById</td>
+<td>0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test4Delete</td>
+<td>0.035s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Setting logged in user info for ADD
+[EL Fine]: sql: 2016-01-29 15:00:47.898--ClientSession(1015729633)--Connection(29813308)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Country_M (countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [C06E118E-B02B-4387-866E-5D66F121BD22, iE0DVwIjdsBnlNZamJuduacFKoymrgQ0, 5, 6, E46, Yi0, oeLDWHesZDqkvRM5GflFItPxRLbkW8NJSMqJFNxJTCMBVvvvPW, IQZVp3A7IS86oGSTqLIwk1qStXkAbCAkj4qNGqq8lBLo32fnuh, 9k0, 24p4vSjrJlZF5sSqobPGYOBOBhOQhExMptY9Xu1eUGNY6pqd0L, Mvuy5kxOEagniQdNaLNUowP1wHCc96Tl, 0, 1, AAAAA, 2016-01-29 15:00:47.889, null, 2016-01-29 15:00:47.889, 1, 51000]
+[EL Fine]: sql: 2016-01-29 15:00:47.933--ClientSession(489036934)--Connection(29813308)--Thread(Thread[Test worker,5,main])--SELECT countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Country_M WHERE ((activeStatus = ?) AND (countryId = ?))
+	bind =&gt; [1, C06E118E-B02B-4387-866E-5D66F121BD22]
+Setting logged in user info for UPDATE
+[EL Fine]: sql: 2016-01-29 15:00:47.936--ClientSession(339885000)--Connection(29813308)--Thread(Thread[Test worker,5,main])--SELECT countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Country_M WHERE (countryId = ?)
+	bind =&gt; [C06E118E-B02B-4387-866E-5D66F121BD22]
+[EL Fine]: sql: 2016-01-29 15:00:47.938--ClientSession(339885000)--Connection(29813308)--Thread(Thread[Test worker,5,main])--UPDATE ast_Country_M SET capital = ?, capitalLongitude = ?, countryCode1 = ?, countryCode2 = ?, countryFlag = ?, countryName = ?, currencyCode = ?, currencyName = ?, currencySymbol = ?, isoNumeric = ?, updatedBy = ?, versionId = ? WHERE ((countryId = ?) AND (versionId = ?))
+	bind =&gt; [h2Zf53XT1pzVUp17jMkihOfYU7fkmBHH, 3, wO7, Mof, tUtJuYQde9JWtVsONuBLlzm98P5n7WDmA5Y5IEcptx6JLYc6hc, T4dpSXm8G6gnRcIQ27qIZp40y8QwF2D5quw3hkeIJoOytyjAX5, Ix0, Bhe1iM2eVQjKMvjtfdViQJQcXIBw2SwOIaZ9yUKXpEKaSCZSwf, ofVEDA5iBJgxzfUbI5zR2245uiGrFXQq, 9, AAAAA, 2, C06E118E-B02B-4387-866E-5D66F121BD22, 1]
+[EL Fine]: sql: 2016-01-29 15:00:47.967--ClientSession(874226624)--Connection(29813308)--Thread(Thread[Test worker,5,main])--SELECT countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Country_M WHERE ((activeStatus = ?) AND (countryId = ?))
+	bind =&gt; [1, C06E118E-B02B-4387-866E-5D66F121BD22]
+[EL Fine]: sql: 2016-01-29 15:00:47.973--ClientSession(1011416435)--Connection(29813308)--Thread(Thread[Test worker,5,main])--SELECT countryId, capital, capitalLatitude, capitalLongitude, countryCode1, countryCode2, countryFlag, countryName, currencyCode, currencyName, currencySymbol, isoNumeric, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Country_M WHERE (countryId = ?)
+	bind =&gt; [C06E118E-B02B-4387-866E-5D66F121BD22]
+[EL Fine]: sql: 2016-01-29 15:00:47.975--ClientSession(1011416435)--Connection(29813308)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Country_M WHERE ((countryId = ?) AND (versionId = ?))
+	bind =&gt; [C06E118E-B02B-4387-866E-5D66F121BD22, 2]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.3</a> at Jan 29, 2016 3:01:05 PM</p>
+</div>
+</div>
+</body>
+</html>
